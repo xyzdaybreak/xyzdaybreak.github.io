@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Julien — Computer Vision, Transformer and Generative AI.">
+  <title>Julien | AI & Computer Vision</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172033; background: #f7f8fb; line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    .nav { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(12px); background: rgba(247,248,251,.85); border-bottom: 1px solid #e5e7eb; }
+    .nav-inner { max-width: 1050px; margin: auto; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; }
+    .brand { font-weight: 800; letter-spacing: .02em; }
+    .links { display: flex; gap: 22px; font-size: 14px; color: #596273; }
+    .links a:hover { color: #111827; }
+    .wrap { max-width: 1050px; margin: auto; padding: 0 24px; }
+    .hero { min-height: 72vh; display: flex; align-items: center; padding: 80px 0 60px; }
+    .eyebrow { color: #596273; font-size: 14px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { font-size: clamp(48px, 8vw, 88px); line-height: .98; margin: 18px 0 24px; letter-spacing: -.055em; }
+    .hero p { max-width: 680px; font-size: 20px; color: #596273; }
+    .buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+    .button { padding: 11px 18px; border-radius: 10px; border: 1px solid #d8dce5; background: white; font-weight: 700; font-size: 14px; }
+    .button.primary { background: #172033; color: white; border-color: #172033; }
+    section { padding: 80px 0; }
+    .section-title { font-size: 30px; margin: 0 0 32px; letter-spacing: -.03em; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .card { background: white; border: 1px solid #e4e7ec; border-radius: 16px; padding: 26px; }
+    .card h3 { margin: 0 0 8px; font-size: 20px; }
+    .card p { margin: 0; color: #687184; }
+    .tags { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag { padding: 5px 9px; border-radius: 999px; background: #f0f2f6; color: #596273; font-size: 12px; }
+    .about { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; }
+    .muted { color: #687184; }
+    footer { padding: 40px 0 60px; color: #7b8494; font-size: 14px; border-top: 1px solid #e5e7eb; }
+    @media (max-width: 700px) { .links { display: none; } .grid, .about { grid-template-columns: 1fr; } .hero { min-height: 65vh; } }
+  </style>
+</head>
+<body>
+  <nav class="nav"><div class="nav-inner"><a class="brand" href="#top">Julien</a><div class="links"><a href="#about">About</a><a href="#research">Research</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></div></nav>
+  <main id="top">
+    <div class="wrap">
+      <section class="hero">
+        <div>
+          <div class="eyebrow">AI · Computer Vision · Generative AI</div>
+          <h1>Building and understanding<br>intelligent vision systems.</h1>
+          <p>I’m Julien, exploring Transformer architectures, high-resolution image segmentation, and generative AI.</p>
+          <div class="buttons"><a class="button primary" href="https://github.com/xyzdaybreak" target="_blank">GitHub</a><a class="button" href="#projects">View projects</a></div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="about">
+          <div><h2 class="section-title">About</h2></div>
+          <div><p class="muted">My interests center on modern computer vision and multimodal AI. I enjoy going beyond using models: understanding their architecture, tracing tensor shapes through the network, reproducing papers, and improving real systems.</p><p class="muted">Current interests include Transformer-based vision models, dichotomous image segmentation, image/video generation and vision-language models.</p></div>
+        </div>
+      </section>
+
+      <section id="research">
+        <h2 class="section-title">Research interests</h2>
+        <div class="grid">
+          <div class="card"><h3>Vision Transformers</h3><p>Transformer, Swin Transformer and efficient hierarchical visual representations.</p><div class="tags"><span class="tag">Transformer</span><span class="tag">Swin</span><span class="tag">ViT</span></div></div>
+          <div class="card"><h3>Image Segmentation</h3><p>High-resolution dichotomous image segmentation and boundary-aware visual representation.</p><div class="tags"><span class="tag">DIS</span><span class="tag">BiRefNet</span><span class="tag">Swin</span></div></div>
+          <div class="card"><h3>Generative AI</h3><p>Image and video generation, relighting, editing and conditional control.</p><div class="tags"><span class="tag">Diffusion</span><span class="tag">IC-Light</span><span class="tag">Video</span></div></div>
+          <div class="card"><h3>Vision-Language Models</h3><p>Exploring multimodal models for image and video understanding.</p><div class="tags"><span class="tag">Qwen3-VL</span><span class="tag">VLM</span><span class="tag">Multimodal</span></div></div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 class="section-title">Selected projects</h2>
+        <div class="grid">
+          <a class="card" href="https://github.com/xyzdaybreak" target="_blank"><h3>BiRefNet & DIS</h3><p>Experiments on high-precision dichotomous image segmentation and model optimization.</p></a>
+          <a class="card" href="https://github.com/xyzdaybreak" target="_blank"><h3>Swin Transformer</h3><p>Deep study and implementation of hierarchical vision Transformer architectures.</p></a>
+          <a class="card" href="https://github.com/xyzdaybreak" target="_blank"><h3>IC-Light</h3><p>Exploration of diffusion-based image relighting and conditional image editing.</p></a>
+          <a class="card" href="https://github.com/xyzdaybreak" target="_blank"><h3>Qwen3-VL</h3><p>Experiments with vision-language models for image and video understanding.</p></a>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <p class="muted">The best place to find my work and experiments is GitHub.</p>
+        <div class="buttons"><a class="button primary" href="https://github.com/xyzdaybreak" target="_blank">github.com/xyzdaybreak</a></div>
+      </section>
+    </div>
+  </main>
+  <footer><div class="wrap">© 2026 Julien · Built with GitHub Pages</div></footer>
+</body>
+</html>
